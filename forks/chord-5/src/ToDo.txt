@@ -1,0 +1,13 @@
+- Fix linkages for fonts when not overridden, even in extended mode
+- Get rid of most of the globals through better context and parameter
+  passing.
+- Man-page fixup to reflect reality
+- Add support for multiple user-defined forms
+- Add support for system-wide and directory specific rc files
+- Add support for a chord lib directory
+- Add autoconfig
+- Make this all ANSI C instead of K&R C
+- Make block and bridge indents work
+- Styles
+- Check with Leclerc and Dorion and see if they're interested in
+  any of these changes.

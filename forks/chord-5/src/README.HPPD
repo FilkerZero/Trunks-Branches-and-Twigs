@@ -1,0 +1,14 @@
+Package name:     chord
+Version number:   3.6
+Original author:  Martin Leclerc, Mario Dorion <Martin.Leclerc@Sun.COM, Mario.Dorion@Sun.COM>
+Report bugs to:   rik@csc.liv.ac.uk
+Tested on:        HP 9000/735 running HP-UX 9.03
+C compiler used:  Version A.09.75
+Purpose:
+Creates PostScript sheet music from an ascii description. Chord produces a
+PostScript document from a lyrics file containing chord indications and chorus
+delimiters. The document produced contains the lyrics of a song, with the
+guitar chords appearing above the right words. A representation of all chords
+used in the song is printed at the bottom of the last page.
+Date archived:    Wed  5 Jul 1995
+Special notes:    None

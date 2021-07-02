@@ -1,0 +1,4979 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 12 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Helvetica FMFONTDEFINE
+3 0 /Times-Bold FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+5 0 /Courier-Bold FMFONTDEFINE
+6 0 /Bookman-Demi FMFONTDEFINE
+7 0 /Bookman-Light FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "15" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-15-) 295.33 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+1 14 Q
+( -t text_font size) 72 710.67 T
+( Sets the size, in points, of the font used to display the lyrics to the) 108 694.67 T
+(speci\336ed integer value. The title line is displayed using that point size) 108 678.67 T
+(+ 5. The sub-title is displayed using that point size -2.) 108 662.67 T
+( -T T) 72 625.67 T
+(ext_font) 99.79 625.67 T
+( Sets the font used to print text to the speci\336ed name. That name must) 108 609.67 T
+(be known to your PostScript Interpreter) 108 593.67 T
+(.) 329.26 593.67 T
+( -V) 72 556.67 T
+(Prints version and patch level) 108 540.67 T
+( -x halftones) 72 503.67 T
+-0.21 ( Sets up transposition to that number of halftones. Can not be zero. All) 108 487.67 P
+2 12 Q
+(chord) 108 471.67 T
+1 14 Q
+(names must be build in the following way in order to be recog-) 141.35 471.67 T
+(nized:) 108 455.67 T
+( {note-name}[#|b][^/]* [ \324/\325 {note-name}[#|b][^/]* ]) 108 418.67 T
+( That is, a valid note name, possibly followed by \324#\325 or \324b\325, followed) 108 376.67 T
+-0.19 (by other modi\336er \050\3247\325, \324m\325, etc...\051. Many such construct can make up a) 108 360.67 P
+(chord name, as long as they are separated by \324/\325.) 108 344.67 T
+( {note-name} must appear in the list \324A) 108 302.67 T
+(\325,\325B\325,\325C\325,\325D\325,\325E\325,\325F\325,\325G\325.) 327.91 302.67 T
+(-2) 72 260.67 T
+(Prints two logical pages per physical page.) 108 244.67 T
+( -4) 72 207.67 T
+(Prints four logical pages per physical page.) 108 191.67 T
+FMENDPAGE
+%%EndPage: "15" 1
+%%Page: "14" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-14-) 295.33 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+1 14 Q
+( - g) 72 710.67 T
+(Disable printing of grids for \322easy\323 chords.) 108 694.67 T
+(Whether a built-in chord is easy or not has been arbitrarily decided by) 108 662.67 T
+(the authors. The general rule was that any chord in its major) 108 646.67 T
+(, minor) 444.15 646.67 T
+(,) 484.04 646.67 T
+(7th or minor 7th was \322easy\323 while everything else \050maj7, aug, dim,) 108 630.67 T
+-0.51 (sus, etc...\051 was \322tough\323. All chords de\336ned in the $HOME/.chordrc \336le) 108 614.67 P
+(or in the input \336le are de\336ned as \322tough\323.) 108 598.67 T
+( -h) 72 561.67 T
+(Prints a short options summary) 108 545.67 T
+(.) 281.32 545.67 T
+( -i) 72 508.67 T
+(Generates a table of contents with the song titles and page numbers. It) 108 492.67 T
+(implies page numbering through the document. Index pages are not) 108 476.67 T
+(numbered.) 108 460.67 T
+( -L) 72 423.67 T
+(Places the odd page numbers on the left.) 108 407.67 T
+( -l) 72 370.67 T
+(Prints only the lyrics of the song.) 108 354.67 T
+( -o \336lename) 72 317.67 T
+( Sends output to <\336lename>.) 108 301.67 T
+( -p \336rst_page) 72 264.67 T
+( Numbers the pages consecutively starting with \336rst_page \050e.g. 1\051.) 108 248.67 T
+(W) 108 232.67 T
+(ithout this option, each song restarts the page numbering at 1, and) 120.66 232.67 T
+(page numbers are only put on subsequent pages of multiple page) 108 216.67 T
+(songs.) 108 200.67 T
+( -R) 72 163.67 T
+(Places the odd and even page numbers in the lower right and left cor-) 108 147.67 T
+(ners respectively \050for two-sided output\051. The default is all page num-) 108 131.67 T
+(bers on the right.) 108 115.67 T
+FMENDPAGE
+%%EndPage: "14" 2
+%%Page: "13" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-13-) 295.33 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(Options and Switches) 72 710.67 T
+1 F
+(Here are the options you can specify when invoking) 72 673.67 T
+2 12 Q
+(CHORD) 367.11 673.67 T
+1 14 Q
+(;) 411.1 673.67 T
+( -A) 72 657.67 T
+(W) 108 641.67 T
+(ill print the \322About) 120.66 641.67 T
+2 12 Q
+(CHORD) 231.1 641.67 T
+1 14 Q
+(...\323 message.) 275.09 641.67 T
+( -a) 72 604.67 T
+(Automatically single spaces lines that have no chords.) 108 588.67 T
+( -c chord_font size) 72 551.67 T
+( Sets the size, in points, of the font used to display chords to the speci-) 108 535.67 T
+(\336ed integer value.) 108 519.67 T
+( -C chord_font) 72 477.67 T
+( Sets the font used to print chords to the speci\336ed name. That name) 108 461.67 T
+(must be known to your PostScript Interpreter) 108 445.67 T
+(.) 359.99 445.67 T
+( -d) 72 408.67 T
+-0.32 ( Generates a text Chord Chart of all internally known chords as well as) 108 392.67 P
+(chords de\336ned in the $HOME/.chordrc \336le. Chords de\336ned in the) 108 376.67 T
+(.chordrc \336le are identi\336ed with the \322\050local\051\323 caption. The printout is) 108 360.67 T
+(suitable for input to the .chordrc \336le.) 108 344.67 T
+( -D) 72 307.67 T
+(Generates a PostScript Chord Chart of all internally known chords as) 108 291.67 T
+(well as chords de\336ned in the $HOME/.chordrc \336le. chords de\336ned in) 108 275.67 T
+-0.18 (the .chordrc \336le are identi\336ed with a small asterisk after the chord grid.) 108 259.67 P
+( -s grid_size) 72 222.67 T
+( Sets the size of the chord grids.) 108 206.67 T
+( -G) 72 169.67 T
+(Disable printing of the chord grids for the whole input \336le\050s\051. The) 108 153.67 T
+-0.2 (ef) 108 137.67 P
+-0.2 (fect can be disable for any particular song by the usage of the grid or) 118.63 137.67 P
+(g directive.) 108 121.67 T
+FMENDPAGE
+%%EndPage: "13" 3
+%%Page: "12" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-12-) 295.33 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(How do I install) 72 710.67 T
+2 12 Q
+(CHORD) 170.8 710.67 T
+3 14 Q
+( on my machine?) 214.79 710.67 T
+2 12 Q
+(CHORD) 72 689.67 T
+1 14 Q
+( is distributed in source format. That means you will need to compile it on) 115.99 689.67 T
+-0.29 (your machine. Doing so requires a C compiler) 72 673.67 P
+-0.29 (. This compiler can implement one of) 328.16 673.67 P
+(two norms about the C language: ANSI or K&R. Both types of compilers will do,) 72 657.67 T
+(but we prefer the \336rst type.) 72 641.67 T
+-0.13 (The \336rst step is to modify the \336le called \322Make\336le\323 to let the system know of some) 72 609.67 P
+(basic preferences:) 72 593.67 T
+(1. If you are running on a system that has a routine called \322getopt\323, make sure the) 72 561.67 T
+(line that says) 72 545.67 T
+4 12 Q
+(GETOPT = getopt.o) 90 531 T
+1 14 Q
+(is commented OUT) 72 515.67 T
+(. T) 181.4 515.67 T
+(o do so, add a \324#\325 at the very beginning of the line. If you do) 195.97 515.67 T
+(not know what we are talking about you should leave the line untouched.) 72 499.67 T
+(2. Select ONE format of paper: US \0508.5 by 1) 72 467.67 T
+(1 inches\051 or A4. The other line should) 321.49 467.67 T
+(be commented out, as outlined in the previous point.) 72 451.67 T
+-0.22 (3. Select the directory in which) 72 419.67 P
+2 12 Q
+-0.21 (CHORD) 249.13 419.67 P
+1 14 Q
+-0.22 ( will be installed, by modifying the value of) 293.13 419.67 P
+(the variable BINDIR. In case of doubt, leave the line unchanged.) 72 403.67 T
+(4.Select the directory in which the manual page for) 72 371.67 T
+2 12 Q
+(CHORD) 362.05 371.67 T
+1 14 Q
+( will be installed, by) 406.04 371.67 T
+(modifying the value of the variable MANDIR. In case of doubt, leave the line) 72 355.67 T
+(unchanged.) 72 339.67 T
+(Save the Make\336le \336le, and invoke the \322make\323 utility) 72 291.67 T
+4 12 Q
+(% make) 90 277 T
+1 14 Q
+(This should build the) 72 245.67 T
+2 12 Q
+(CHORD) 194.12 245.67 T
+1 14 Q
+( utility correctly) 238.11 245.67 T
+(. If you have problems at this point,) 327.42 245.67 T
+(\336rst try to contact someone who may be an experienced system administrator or) 72 229.67 T
+(programmer for assistance. If all else fails, send a detailed message to the authors,) 72 213.67 T
+(and they will do their best to help) 72 197.67 T
+(If the \322make\323 succeeded, invoke) 72 165.67 T
+4 12 Q
+(% make install) 90 151 T
+1 14 Q
+(to have the utility installed in the right spot. Y) 72 135.67 T
+(ou could also manually install the) 328.83 135.67 T
+2 12 Q
+(CHORD) 72 119.67 T
+1 14 Q
+( binary in the location of your choice.) 115.99 119.67 T
+(Included with the distribution are two sample \336les, under the \322song\323 subdirectory) 72 87.67 T
+(.) 527.59 87.67 T
+FMENDPAGE
+%%EndPage: "12" 4
+%%Page: "11" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-11-) 295.33 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(Wher) 72 710.67 T
+(e to \336nd) 105.96 710.67 T
+2 12 Q
+(CHORD) 157.69 710.67 T
+3 14 Q
+( \336les) 201.69 710.67 T
+2 12 Q
+(CHORD) 72 689.67 T
+1 14 Q
+( having been around since 1991 there is a number of) 115.99 689.67 T
+2 12 Q
+(CHORD) 412.65 689.67 T
+1 14 Q
+( input \336les) 456.64 689.67 T
+-0.66 (freely available if you have access to the Internet.) 72 673.67 P
+3 F
+-0.66 (http://www) 347.49 673.67 P
+-0.66 (.nada.kth.se/~f91-jsc) 414.38 673.67 P
+1 F
+(is the home page of a) 72 657.67 T
+2 12 Q
+(CHORD) 194.86 657.67 T
+1 14 Q
+(archive.) 242.19 657.67 T
+3 F
+( FTP) 286.89 657.67 T
+(.NEV) 315.55 657.67 T
+(ADA.EDU) 346.8 657.67 T
+1 F
+( \050131.216.1.1) 410.18 657.67 T
+(1\051 con-) 484.32 657.67 T
+(tains chord and tab \336les for a great many pop and traditional songs. Many of the) 72 641.67 T
+(songs are in) 72 625.67 T
+2 12 Q
+(CHORD) 142.38 625.67 T
+1 14 Q
+( format. Look for \336le with the extensions CRD, .CHO, .CRD-) 186.37 625.67 T
+(PRO, .CHOPRO or .CHORDPRO. The songs are in the directory /pub/guitar) 72 609.67 T
+(. This) 502.88 609.67 T
+(site is available for anonymous FTP) 72 593.67 T
+(.) 272.27 593.67 T
+(The following USENET newsgroup are often used to post or request chord and tab) 72 561.67 T
+(\336les:) 72 545.67 T
+3 F
+( r) 99.23 545.67 T
+(ec.music.makers.guitar) 108.69 545.67 T
+(.tablatur) 246.22 545.67 T
+(e) 298.46 545.67 T
+1 F
+(,) 304.68 545.67 T
+3 F
+(alt.guitar) 311.68 545.67 T
+(.tab) 366 545.67 T
+(The authors) 72 515.67 T
+2 12 Q
+(CHORD) 72 494.67 T
+1 14 Q
+( has been developed by Martin Leclerc and Mario Dorion, both systems) 115.99 494.67 T
+(engineer with the Montr\216al \050Canada\051 subsidiary of Sun Microsystems. W) 72 478.67 T
+(e\325re still) 481.49 478.67 T
+(developing and supporting) 72 462.67 T
+2 12 Q
+(CHORD) 224.82 462.67 T
+1 14 Q
+(.) 268.82 462.67 T
+(Feel free to contact us via e-mail to suggest improvements and report bug \336xes.) 72 430.67 T
+(Our email addresses are) 72 414.67 T
+3 F
+(Martin.Lecler) 209.62 414.67 T
+(c@Sun.Com) 293.73 414.67 T
+1 F
+( and) 368.59 414.67 T
+3 F
+(Mario.Dorion@Sun.Com) 72 398.67 T
+(Copyright) 72 368.67 T
+1 F
+-0.09 (Y) 72 347.67 P
+-0.09 (ou are authorized to use this program free of char) 80.71 347.67 P
+-0.09 (ge. Y) 356.02 347.67 P
+-0.09 (ou are authorized to distrib-) 384.85 347.67 P
+-0.25 (ute this program freely as long as the full source is included. Y) 72 331.67 P
+-0.25 (ou are not allowed to) 419.53 331.67 P
+-0.23 (remove the \324copyright\325 notices from the authors nor are you allowed to pretend you) 72 315.67 P
+-0.33 (wrote it. Y) 72 299.67 P
+-0.33 (ou are not allowed to char) 130.21 299.67 P
+-0.33 (ge any money for) 274.1 299.67 P
+2 12 Q
+-0.31 (CHORD) 374.64 299.67 P
+1 14 Q
+-0.33 (. Y) 418.63 299.67 P
+-0.33 (ou are not allowed) 434.01 299.67 P
+(to use parts of) 72 283.67 T
+2 12 Q
+(CHORD) 154.43 283.67 T
+1 14 Q
+( in any other commercial or public-domain software.) 198.42 283.67 T
+(The authors spent a great deal of time making it as feature-full and usable as possi-) 72 251.67 T
+-0.54 (ble. If you like this program, please take the time to send a postcard from your home) 72 235.67 P
+(town or locality to each of the two authors and let them know what you think of) 72 219.67 T
+2 12 Q
+(CHORD) 72 203.67 T
+1 14 Q
+(. Please send the cards to the following addresses:) 115.99 203.67 T
+(Martin Leclerc) 144 187.67 T
+(Mario Dorion) 324 187.67 T
+(19 Browning) 144 171.67 T
+(18 Geor) 324 171.67 T
+(gia Crescent) 369.23 171.67 T
+(Dollard des Ormeaux) 144 155.67 T
+(Pointe Claire) 324 155.67 T
+(Quebec, H9G 2K5) 144 139.67 T
+(Quebec, H9R 5V7) 324 139.67 T
+(CANADA) 144 123.67 T
+(CANADA) 324 123.67 T
+FMENDPAGE
+%%EndPage: "11" 5
+%%Page: "10" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-10-) 295.33 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(About the chords) 72 710.67 T
+2 12 Q
+(CHORD) 178.95 710.67 T
+3 14 Q
+( knows about:) 222.94 710.67 T
+2 12 Q
+-0.17 (CHORD) 72 689.67 P
+1 14 Q
+-0.18 ( knows of about 360 chords. Now) 115.99 689.67 P
+-0.18 (, we KNOW your favorite chord won\325) 303.37 689.67 P
+-0.18 (t be) 516.25 689.67 P
+(in there, and if it is, it will be all wrong. So we put in a facility for people to de\336ne) 72 673.67 T
+-0.23 (their own chords. This facility will also let you rede\336ne already de\336ned chords. For) 72 657.67 P
+(the details, look in the \322Directives\323 section of this guide, for the \322de\336ne\323 directive.) 72 641.67 T
+3 F
+(About your pr) 72 595.67 T
+(efer) 158.09 595.67 T
+(ences:) 181.14 595.67 T
+1 F
+(Y) 72 574.67 T
+(ou can store your preferences about fonts and chords in a \336le that is unique to) 80.71 574.67 T
+(every user) 72 558.67 T
+(. This \336le is called \322.chordrc\323 and should be in your home directory) 129.15 558.67 T
+(. For) 506.95 558.67 T
+(the list of the preferences you can have, see the \322Directives\323 section.) 72 542.67 T
+3 F
+(Putting comments in your \336les) 72 496.67 T
+1 F
+(A line starting with a \324#\325 is interpreted as a comment, and generates no output.) 72 475.67 T
+(\050although all your comments are automatically mailed to the authors, and we read) 72 459.67 T
+(them at parties...\051) 72 443.67 T
+FMENDPAGE
+%%EndPage: "10" 6
+%%Page: "9" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-9-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+0 5 5 605 787 600 782 45 -44.01 FMBEGINEPSF
+%%BeginDocument: /home/martin/wrk/chord-martin/ex2.eps
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: A song
+%%Creator: Martin Leclerc & Mario Dorion
+%%BoundingBox: 5 5 605 787
+%%EndComments
+/inch {72 mul } def
+
+/CHORD_FONT { /Helvetica-Oblique findfont 9 scalefont } def
+/TEXT_FONT { /Times-Roman findfont 12 scalefont } def
+/MONO_FONT { /Courier findfont 10 scalefont } def
+% routines for the drawing of the chords
+/grid { 
+	currentpoint currentpoint
+	6 { 0 cagesizeX rlineto incr cagesize neg incr add rmoveto } repeat
+	moveto
+	5 { cagesize 0 rlineto 0 cagesize sub incr rmoveto } repeat
+	1 setlinewidth stroke moveto
+	currentpoint
+	0 cagesizeX rmoveto cagesize 0 rlineto
+	cagesize 30 div setlinewidth stroke
+	moveto	
+} def
+
+/dot {
+	/fret exch def /str exch def
+	/x 5  fret abs sub incr mul half-incr sub def
+	/y 6 str sub incr mul def
+	currentpoint
+	y x rmoveto
+	0 setgray
+	fret -1 eq
+	  {
+	  0 incr rmoveto
+	  check neg  check neg rmoveto
+	  check check rlineto check check rlineto
+	  check neg check neg rmoveto check neg check rmoveto
+  	  check check neg rlineto check check neg rlineto
+	  cagesize 50 div setlinewidth stroke
+	  }
+	  {  fret 0 ne
+	    { currentpoint dot-size 0 360 arc fill}
+	    { currentpoint
+	      check 0 360 newpath arc
+	      cagesize 50 div setlinewidth
+	    }
+	    ifelse 
+	    stroke 
+	  }
+	  ifelse
+	moveto
+} def	
+
+/dots {
+	grid
+	/origin exch def
+	/fret-displ exch def
+	  1 1 6
+	  {
+	    /str exch def
+	    /fret exch def
+	    fret -2 ne {str fret dot} if
+	  } for
+
+	fret-displ 1 ne
+	{
+    	  currentpoint displ-font setfont
+    	  0 cagesize fret-displ 10 ge {1.75} {3} ifelse div sub
+	  cagesizeX incr sub rmoveto
+    	  /char 6 string def fret-displ char cvs show moveto 
+	} if
+
+	/chord-name exch def
+	currentpoint displ-font setfont
+	0 cagesizeX cagesizeX 15 div add dot-size 3 mul add rmoveto
+	chord-name stringwidth pop 2 div cagesize 2 div exch sub 0 rmoveto
+	chord-name show
+	0 cagesize 10 div rmoveto
+	origin 1 eq { (*) show} if
+	origin 2 eq { (**) show} if
+	chord-font setfont moveto
+} def
+
+/cagesize 30 def
+/incr cagesize 5 div def
+/cagesizeX incr 4 mul def
+/half-incr incr 2 div def
+/dot-size cagesize 15 div def
+/check cagesize 20 div def
+
+/chord-font /Times-Roman findfont cagesize 5 div scalefont def
+/displ-font /Times-Roman findfont cagesize 3 div scalefont def
+% end of the routines for the drawing of the chords
+
+%%EndProlog
+/TEXT_FONT { /Times-Roman findfont 17 scalefont } def
+/MONO_FONT { /Courier findfont 15 scalefont } def
+TEXT_FONT setfont
+( Everybody Hurts) dup stringwidth pop 2 div
+612 2 div exch sub 756 moveto
+show
+/TEXT_FONT { /Times-Roman findfont 12 scalefont } def
+/MONO_FONT { /Courier findfont 10 scalefont } def
+TEXT_FONT setfont
+( REM) dup stringwidth pop 2 div
+612 2 div exch sub 739 moveto
+show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+717 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Intro    ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+717 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Intro              ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+717 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Intro                       ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+717 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 706 moveto
+(Intro                       ) show
+/minhpos 0 def
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(When your day is ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(When your day is long and the ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(When your day is long and the night, the night is ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(When your day is long and the night, the night is yours a) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+72 665 moveto
+(When your day is long and the night, the night is yours alone) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+655 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(When you're sure you've had e) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+655 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(When you're sure you've had enough of this ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+655 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(When you're sure you've had enough of this life, well ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+655 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 644 moveto
+(When you're sure you've had enough of this life, well hang on) show
+MONO_FONT setfont
+72 633 moveto
+(   E\(low\)-3-2-0-) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Don't let yourself ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Don't let yourself go, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Don't let yourself go, cause everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Don't let yourself go, cause everybody cries ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Don't let yourself go, cause everybody cries and everybody) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Don't let yourself go, cause everybody cries and everybody hurts some) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Don't let yourself go, cause everybody cries and everybody hurts sometimes ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+623 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 612 moveto
+(Don't let yourself go, cause everybody cries and everybody hurts sometimes ) show
+/minhpos 0 def
+TEXT_FONT setfont
+(Sometimes everything is ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+602 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Sometimes everything is wrong,   ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+602 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Sometimes everything is wrong,   now it's time to sing a) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+602 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+72 591 moveto
+(Sometimes everything is wrong,   now it's time to sing along) show
+/minhpos 0 def
+TEXT_FONT setfont
+(When your day is night alone ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+581 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(When your day is night alone           \(hold ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+581 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+72 570 moveto
+(When your day is night alone           \(hold on, hold on\)) show
+/minhpos 0 def
+TEXT_FONT setfont
+(If you feel like letting go ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+560 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(If you feel like letting go            \(hold ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+560 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+72 549 moveto
+(If you feel like letting go            \(hold on\)) show
+/minhpos 0 def
+TEXT_FONT setfont
+(If you think you've had too ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+539 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(If you think you've had too much of this ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+539 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(If you think you've had too much of this life, well hang ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+539 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 528 moveto
+(If you think you've had too much of this life, well hang on) show
+/minhpos 0 def
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+498 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Cause everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+498 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Cause everybody hurts, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+498 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Cause everybody hurts, take comfort in your ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+498 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+72 487 moveto
+(Cause everybody hurts, take comfort in your friends) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+477 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+477 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Everybody hurts, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+477 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Everybody hurts, don't throw your ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+477 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Everybody hurts, don't throw your hands, oh ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+477 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Everybody hurts, don't throw your hands, oh now, don't throw your ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+477 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+72 466 moveto
+(Everybody hurts, don't throw your hands, oh now, don't throw your hands) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (C) stringwidth pop add def
+456 moveto
+CHORD_FONT setfont
+(C) show
+TEXT_FONT setfont
+(If you feel like you're ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D4) stringwidth pop add def
+456 moveto
+CHORD_FONT setfont
+(D4) show
+TEXT_FONT setfont
+(If you feel like you're alone, no, no, no, you're not ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+456 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+72 445 moveto
+(If you feel like you're alone, no, no, no, you're not alone) show
+MONO_FONT setfont
+72 434 moveto
+(           D4 ->   E-0-----0-----0-----0--) show
+MONO_FONT setfont
+72 423 moveto
+(                   B---3-----3-----3------) show
+MONO_FONT setfont
+72 412 moveto
+(                   G-----0-----0-----0----) show
+/minhpos 0 def
+TEXT_FONT setfont
+( ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+402 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+( If you're on your ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+402 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+( If you're on your own in this ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+402 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+( If you're on your own in this life, the days and nights are ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+402 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 391 moveto
+( If you're on your own in this life, the days and nights are long) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+381 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(When you think you've had too ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+381 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(When you think you've had too much, with this ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+381 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(When you think you've had too much, with this life, to hang ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+381 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 370 moveto
+(When you think you've had too much, with this life, to hang on) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+360 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Well everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+360 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Well everybody hurts, some) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+360 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+72 349 moveto
+(Well everybody hurts, sometimes ) show
+/minhpos 0 def
+TEXT_FONT setfont
+(Everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+339 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Everybody cries, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E) stringwidth pop add def
+339 moveto
+CHORD_FONT setfont
+(E) show
+TEXT_FONT setfont
+(Everybody cries, and everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A) stringwidth pop add def
+339 moveto
+CHORD_FONT setfont
+(A) show
+TEXT_FONT setfont
+(Everybody cries, and everybody hurts,) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (N.C.) stringwidth pop add def
+339 moveto
+CHORD_FONT setfont
+(N.C.) show
+TEXT_FONT setfont
+(Everybody cries, and everybody hurts, ...      some) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+339 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Everybody cries, and everybody hurts, ...      sometimes ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+339 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 328 moveto
+(Everybody cries, and everybody hurts, ...      sometimes ) show
+1  setlinewidth
+newpath
+62 369 moveto
+0 -41 rlineto
+closepath
+stroke
+/minhpos 0 def
+TEXT_FONT setfont
+(But everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+318 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(But everybody hurts ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+318 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(But everybody hurts sometimes so hold ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+318 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(But everybody hurts sometimes so hold on, hold ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+318 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(But everybody hurts sometimes so hold on, hold on, hold ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+318 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+72 307 moveto
+(But everybody hurts sometimes so hold on, hold on, hold on) show
+/minhpos 0 def
+TEXT_FONT setfont
+(Hold on, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+297 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Hold on, hold on, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+297 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Hold on, hold on, hold on, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+297 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Hold on, hold on, hold on, hold on, ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+297 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+72 286 moveto
+(Hold on, hold on, hold on, hold on, hold on) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+276 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Everybody ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+276 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Everybody hurts ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+276 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Everybody hurts      ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+276 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(Everybody hurts           ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+276 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 265 moveto
+(Everybody hurts           ) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+255 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(You are not alone ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+255 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(You are not alone      ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+255 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(You are not alone           ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+255 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(You are not alone                ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D) stringwidth pop add def
+255 moveto
+CHORD_FONT setfont
+(D) show
+TEXT_FONT setfont
+(You are not alone                     ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+255 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 244 moveto
+(You are not alone                     ) show
+/minhpos 0 def
+480 234 moveto
+72 174 moveto
+(A) -1 0 2 2 2 0 1 0 dots
+132 174 moveto
+(C) -1 3 2 0 1 0 1 0 dots
+192 174 moveto
+(D) -1 -1 0 2 3 2 1 0 dots
+252 174 moveto
+(D4) -1 -1 0 0 3 -1 1 2 dots
+312 174 moveto
+(E) -1 3 3 2 0 0 1 2 dots
+372 174 moveto
+(G) 3 2 0 0 3 3 1 2 dots
+1  setlinewidth
+0  setgray
+newpath
+72 36 10 sub moveto
+468 0 rlineto
+stroke
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+FMENDPAGE
+%%EndPage: "9" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-8-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(Another example:) 72 710.67 T
+1 F
+(This example uses some of the more advanced directives:) 72 689.67 T
+4 10 Q
+({) 72 676.33 T
+5 F
+(title) 78 676.33 T
+4 F
+(: Everybody Hurts}) 108 676.33 T
+({) 72 664.33 T
+5 F
+(subtitle) 78 664.33 T
+4 F
+(: REM}) 126 664.33 T
+({) 72 652.33 T
+5 F
+(def) 78 652.33 T
+(ine) 96 652.33 T
+4 F
+(: G) 114 652.33 T
+5 F
+(base-fret) 138 652.33 T
+4 F
+( 1) 192 652.33 T
+5 F
+(frets) 210 652.33 T
+4 F
+( 3 2 0 0 3 3}) 240 652.33 T
+({) 72 640.33 T
+5 F
+(def) 78 640.33 T
+(ine) 96 640.33 T
+4 F
+(: D4) 114 640.33 T
+5 F
+(base-fret) 144 640.33 T
+4 F
+( 1) 198 640.33 T
+5 F
+(frets) 216 640.33 T
+4 F
+( - - 0 0 3 -}) 246 640.33 T
+({) 72 628.33 T
+5 F
+(def) 78 628.33 T
+(ine) 96 628.33 T
+4 F
+(: E) 114 628.33 T
+5 F
+(base-fret) 138 628.33 T
+4 F
+( 1) 192 628.33 T
+5 F
+(frets) 210 628.33 T
+4 F
+( - 3 3 2 0 0}) 240 628.33 T
+([D]Intro [G] [D] [G]) 72 616.33 T
+([D]When your day is [G]long and the [D]night, the night is [G]yours a[D]lone) 72 592.33 T
+([D]When you\325re sure you\325ve had e[G]nough of this [D]life, well [G]hang on) 72 580.33 T
+({) 72 568.33 T
+5 F
+(start_of_tab) 78 568.33 T
+4 F
+(}) 150 568.33 T
+( E\050low\051-3-2-0-) 108 556.33 T
+({) 72 544.33 T
+5 F
+(end_of_tab) 78 544.33 T
+4 F
+(}) 138 544.33 T
+([E]Don\325t let yourself [A]go, [E]cause everybody [A]cries [E]and everybody[A]) 72 532.33 T
+(hurts some[D]times [G]) 72 520.33 T
+(Sometimes everything is [D]wrong, [G]now it\325s time to sing a[D]long) 72 508.33 T
+(When your day is night alone [G] \050hold [D]on, hold on\051) 72 496.33 T
+(If you feel like letting go [G] \050hold [D]on\051) 72 484.33 T
+(If you think you\325ve had too [G]much of this [D]life, well hang [G]on) 72 472.33 T
+([E]Cause everybody [A]hurts, [E]take comfort in your [A]friends) 72 448.33 T
+([E]Everybody [A]hurts, [E]don\325t throw your [A]hands, oh [E]now, don\325t throw) 72 436.33 T
+(your [A]hands) 72 424.33 T
+([C]If you feel like you\325re [D4]alone, no, no, no, you\325re not [A]alone) 72 412.33 T
+({) 72 400.33 T
+5 F
+(start_of_tab) 78 400.33 T
+4 F
+(}) 150 400.33 T
+( D4->) 216 388.33 T
+(E-0-----0-----0-----0--) 252 388.33 T
+(B---3-----3-----3------) 252 376.33 T
+(G-----0-----0-----0----) 252 364.33 T
+({) 72 352.33 T
+5 F
+(end_of_tab) 78 352.33 T
+4 F
+(}) 138 352.33 T
+([D]If you\325re on your [G]own in this [D]life, the days and nights are [G]long) 72 340.33 T
+([D]When you think you\325ve had too [G]much, with this [D]life, to hang [G]on) 72 328.33 T
+({) 72 304.33 T
+5 F
+(start_of_chorus) 78 304.33 T
+4 F
+(}) 168 304.33 T
+([E]Well everybody [A]hurts, some[E]times) 72 292.33 T
+(Everybody [A]cries, [E]and everybody [A]hurts,[N.C.] ... some[D]times [G]) 72 280.33 T
+({) 72 268.33 T
+5 F
+(end_of_chorus) 78 268.33 T
+4 F
+(}) 156 268.33 T
+(But everybody [D]hurts [G]sometimes so hold [D]on, hold [G]on, hold [D]on) 72 256.33 T
+(Hold on, [G]hold on, [D]hold on, [G]hold on, [D]hold on) 72 244.33 T
+([G]Everybody [D]hurts [G] [D] [G]) 72 232.33 T
+([D]You are not alone [G] [D] [G] [D] [G]) 72 220.33 T
+(#Picking pattern for the chords:) 72 208.33 T
+(# D G) 72 196.33 T
+(#E----------2-----------2-------------3-----------3-----------------------) 72 184.33 T
+(#B--------3---3-------3---3---------3---3-------3---3---------------------) 72 172.33 T
+(#G------2-------2---2-------2-----0-------0---0---------------------------) 72 160.33 T
+(#D----0-----------0-------------------------------------------------------) 72 148.33 T
+(#A------------------------------------------------------------------------) 72 136.33 T
+(#E------------------------------3-----------3-----------------------------) 72 124.33 T
+1 14 Q
+-0.12 (See the result on the next page. Look for the tablatures and the modi\336ed de\336nitions) 72 93.67 P
+(of chords G, D4 and E.) 72 77.67 T
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "7" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-7-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(chordsize) 75.5 710.67 T
+1 F
+(: n) 132.27 710.67 T
+( Same as -c command option.) 108 694.67 T
+3 F
+(no_grid) 75.5 657.67 T
+1 F
+( or) 122.18 657.67 T
+3 F
+(ng) 140.84 657.67 T
+1 F
+( W) 108 641.67 T
+(ill disable printing of the chord grids for the current song.) 124.16 641.67 T
+3 F
+(grid) 75.5 604.67 T
+1 F
+( or) 100.39 604.67 T
+3 F
+(g) 119.05 604.67 T
+1 F
+-0.33 (W) 108 588.67 P
+-0.33 (ill enable the printing of the chord grids for the current song \050subject) 120.66 588.67 P
+(to the limitation caused by the usage of the -g option\051. This directive) 108 572.67 T
+(will override the runtime -G option for the current song.) 108 556.67 T
+3 F
+(new_page) 75.5 519.67 T
+1 F
+( or) 134.61 519.67 T
+3 F
+(np) 153.27 519.67 T
+1 F
+(W) 108 503.67 T
+(ill force a logical page break \050which will obviously turn out to be a) 120.66 503.67 T
+(physical page break if you are not in either 2-up or 4-up mode\051.) 108 487.67 T
+3 F
+(new_physical_page) 75.5 450.67 T
+1 F
+( or) 190.62 450.67 T
+3 F
+(npp) 209.28 450.67 T
+1 F
+( W) 108 434.67 T
+(ill force a physical page break \050in any mode\051.) 124.16 434.67 T
+3 F
+(start_of_tab) 75.5 397.67 T
+1 F
+( or) 148.59 397.67 T
+3 F
+(sot) 167.26 397.67 T
+1 F
+(W) 108 381.67 T
+(ill cause) 120.66 381.67 T
+2 12 Q
+(chord) 170.43 381.67 T
+1 14 Q
+( to use a monospace \050i.e.: non-proportional\051 font for) 200.44 381.67 T
+(the printing of text. This can be used to enter \324tab\325 information where) 108 365.67 T
+-0.34 (character positioning is crucial. The Courier font is used with the same) 108 349.67 P
+(point-size as the rest of the text.) 108 333.67 T
+3 F
+(end_of_tab) 75.5 296.67 T
+1 F
+( or) 142.39 296.67 T
+3 F
+(eot) 161.05 296.67 T
+1 F
+(W) 108 280.67 T
+(ill stop using monospace font. The ef) 120.66 280.67 T
+(fect is implicit at the end of a) 328.44 280.67 T
+(song.) 108 264.67 T
+3 F
+(columns:) 72 243.67 T
+1 F
+(n or) 129.95 243.67 T
+3 F
+( col:) 152.11 243.67 T
+1 F
+( n) 177.38 243.67 T
+(Speci\336es the number of columns on the pages of  the current song.) 108 227.67 T
+3 F
+(column_br) 72 185.67 T
+(eak) 137.09 185.67 T
+1 F
+( or) 158.09 185.67 T
+3 F
+(colb) 176.75 185.67 T
+1 F
+-0.47 (Forces a column break. The next  line  of  the  song will  appear  in  the) 108 169.67 P
+(next available column, at the same height as the last "columns" state-) 108 153.67 T
+(ment if still on  the  same page, or at the top of the page otherwise.) 108 137.67 T
+FMENDPAGE
+%%EndPage: "7" 9
+%%Page: "6" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-6-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(subtitle) 75.5 694.67 T
+1 F
+(: or) 119.84 694.67 T
+3 F
+(st) 142.39 694.67 T
+1 F
+(:) 152.5 694.67 T
+-0.29 (Speci\336es a string to be printed right below the title. Many subtitles can) 108 678.67 P
+(be speci\336ed.) 108 662.67 T
+3 F
+(de\336ne) 75.5 625.67 T
+1 F
+(: name) 111.28 625.67 T
+3 F
+(base-fr) 152.5 625.67 T
+(et) 194.23 625.67 T
+1 F
+( of) 205.11 625.67 T
+(fset) 220.02 625.67 T
+3 F
+(fr) 243.74 625.67 T
+(ets) 254.36 625.67 T
+1 F
+( str1...str6) 270.69 625.67 T
+-0.48 (De\336nes a new chord called \322name\323. The keyword \322base-fret\323 indicates) 108 609.67 P
+(that the number that follows \050\322of) 108 593.67 T
+(fset\323\051 is the \336rst fret that is to be dis-) 291.67 593.67 T
+(played when representing the way this chord is played.) 108 577.67 T
+(The keyword \322frets\323 then appears and is followed by 6 values. These) 108 556.67 T
+-0.38 (values are the fret number [ 1 to n ] for each string [str1 to str6] and are) 108 540.67 P
+(RELA) 108 524.67 T
+(TIVE to the of) 143 524.67 T
+(fset. A value of \322-\323, \322X\323 or \322x\323 indicates a string) 224.79 524.67 T
+(that is not played.) 108 508.67 T
+(Keywords) 108 487.67 T
+3 F
+(base-fr) 169.04 487.67 T
+(et) 210.77 487.67 T
+1 F
+( and) 221.65 487.67 T
+3 F
+(fr) 248.87 487.67 T
+(ets) 259.49 487.67 T
+1 F
+( are mandatory) 275.82 487.67 T
+(.) 358.88 487.67 T
+(A value of 0 for a given string means it is to be played open, and will) 108 466.67 T
+(be marked by a small open circle above the string in the grid. The) 108 450.67 T
+-0.33 (strings are numbered in ascending order of tonality) 108 434.67 P
+-0.33 (, starting on the low) 390.55 434.67 P
+-0.16 (E \050the top string\051. On output, a chord de\336ned in the user) 108 418.67 P
+-0.16 (\325) 420.51 418.67 P
+-0.16 (s .chordrc \336le) 424.4 418.67 P
+(will have a small asterisk near its grid, a chord de\336ned in a song will) 108 402.67 T
+(have two small asterix. At the beginning of every song, the default) 108 386.67 T
+(chords are reloaded and the user) 108 370.67 T
+(\325) 289.29 370.67 T
+(s .chordrc \336le is reread. Chord de\336ni-) 293.18 370.67 T
+-0.25 (tion of new chords inside the text of a song are only valid for that song.) 108 354.67 P
+(The syntax of a {de\336ne} directive has been modi\336ed in) 108 333.67 T
+2 12 Q
+(CHORD) 421.61 333.67 T
+1 14 Q
+( 3.5.) 465.61 333.67 T
+2 12 Q
+(CHORD) 108 317.67 T
+1 14 Q
+( will attempt to recognize an old-format) 151.99 317.67 T
+3 F
+({de\336ne}) 378.68 317.67 T
+1 F
+( and will) 425.5 317.67 T
+(accept it. It will, though, print a warning inviting you to modify your) 108 301.67 T
+(input \336le to use the new syntax \050the exact) 108 285.67 T
+3 F
+({de\336ne}) 344.03 285.67 T
+1 F
+( entry to use is pro-) 390.84 285.67 T
+(vided as an example\051.) 108 269.67 T
+3 F
+(textfont) 75.5 232.67 T
+1 F
+(: postscript_font) 122.15 232.67 T
+( Same as -T command option.) 108 216.67 T
+3 F
+(textsize) 75.5 179.67 T
+1 F
+(: n) 119.81 179.67 T
+( Same as -t command option.) 108 163.67 T
+3 F
+(chordfont) 75.5 126.67 T
+1 F
+(: postscript_font) 134.61 126.67 T
+( Same as -C command option.) 108 110.67 T
+FMENDPAGE
+%%EndPage: "6" 10
+%%Page: "5" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-5-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(Dir) 72 710.67 T
+(ectives) 91.96 710.67 T
+1 F
+-0.12 (A directive is a string of text that appears between french brackets \050\324{\324 and \324}\325\051 and) 72 673.67 P
+(has a special meaning to) 72 657.67 T
+2 12 Q
+(CHORD) 212.36 657.67 T
+1 14 Q
+(. It contains a message that will af) 256.36 657.67 T
+(fect the way) 446.63 657.67 T
+2 12 Q
+(CHORD) 72 641.67 T
+1 14 Q
+( processes your \336le. Examples of directive uses would be: changing the) 115.99 641.67 T
+(fonts, marking a chorus, and de\336ning a title.) 72 625.67 T
+(Directives must be alone on a line. Blanks before the opening bracket and after the) 72 609.67 T
+(closing bracket are not signi\336cant. Blanks inside a directive are ignored.) 72 593.67 T
+( Supported directives are:) 72 561.67 T
+3 F
+(start_of_chorus) 75.5 529.67 T
+1 F
+( or) 169.59 529.67 T
+3 F
+(soc) 188.26 529.67 T
+1 F
+(Which indicates the start of a chorus \050yep\051. The complete chorus will) 108 513.67 T
+(be highlighted by a change bar) 108 497.67 T
+(, to be easily located by the player) 279.68 497.67 T
+(.) 470.21 497.67 T
+3 F
+(end_of_chorus) 75.5 465.67 T
+1 F
+( or) 163.39 465.67 T
+3 F
+(eoc) 182.05 465.67 T
+1 F
+(Marks the end of the chorus.) 108 449.67 T
+3 F
+(comment) 75.5 412.67 T
+1 F
+(: or) 130.7 412.67 T
+3 F
+(c) 153.26 412.67 T
+1 F
+(:) 159.47 412.67 T
+(W) 108 396.67 T
+(ill call the printing of the rest of the line, highlighted by a grey box.) 120.66 396.67 T
+(\050Useful to call a chorus, for example\051) 108 380.67 T
+3 F
+(comment_italic) 75.5 343.67 T
+1 F
+(: or) 167.26 343.67 T
+3 F
+(ci) 189.81 343.67 T
+1 F
+(:) 199.92 343.67 T
+(W) 108 327.67 T
+(ill print the comment in an italic font... well not really) 120.66 327.67 T
+(, it will print) 421.12 327.67 T
+(the comment in the font used for printing the chord names \050which is) 108 311.67 T
+(normally italic unless you speci\336ed a dif) 108 295.67 T
+(ferent chord_font\051.) 334.84 295.67 T
+3 F
+(comment_box) 75.5 258.67 T
+1 F
+(: or) 159.49 258.67 T
+3 F
+(cb) 182.04 258.67 T
+1 F
+(:) 196.04 258.67 T
+( W) 108 242.67 T
+(ill print the comment inside a bounding box.) 124.16 242.67 T
+3 F
+(new_song) 75.5 205.67 T
+1 F
+( or) 133.84 205.67 T
+3 F
+(ns) 152.5 205.67 T
+1 F
+(Marks the beginning of a new song. It enables you to put multiple) 108 189.67 T
+(songs in one \336le. It is not required at the beginning of the \336le.) 108 173.67 T
+3 F
+(title) 75.5 136.67 T
+1 F
+(: or) 98.82 136.67 T
+3 F
+(t) 121.38 136.67 T
+1 F
+(:) 126.04 136.67 T
+(Speci\336es the title of the song. It will appear centered at the top of the) 108 120.67 T
+-0.43 (\336rst page, and at the bottom of every other page, accompanied there by) 108 104.67 P
+(the page number) 108 88.67 T
+(, within the current song.) 200.75 88.67 T
+FMENDPAGE
+%%EndPage: "5" 11
+%%Page: "4" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-4-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(How do I use) 72 710.67 T
+2 12 Q
+(CHORD) 153.68 710.67 T
+3 14 Q
+(?) 197.67 710.67 T
+1 F
+(Using) 72 689.67 T
+2 12 Q
+(CHORD) 108.95 689.67 T
+1 14 Q
+( is simple. four step are required:) 152.94 689.67 T
+(1. T) 72 657.67 T
+(ype in the lyrics of the songs: this can be done with any text editor) 93.57 657.67 T
+(.) 464.55 657.67 T
+4 12 Q
+(% edit loveme) 90 643 T
+(Love me tender love me sweet Never let me go) 90 629 T
+1 14 Q
+-0.1 (2. Insert the chord names between square brackets throughout the lyrics. The chord) 72 599.67 P
+(name will appear right above the letter that follows the closing bracket) 72 583.67 T
+4 12 Q
+(Love me tender [A7]love me sweet [D7]Never let me [G]go) 90 569 T
+1 14 Q
+-0.43 (3. Insert any directive you want to give to) 72 539.67 P
+2 12 Q
+-0.41 (CHORD) 305.29 539.67 P
+1 14 Q
+-0.43 (: titles, sub-titles, chorus markers,) 349.29 539.67 P
+(comments, etc.) 72 523.67 T
+4 12 Q
+({) 90 509 T
+5 F
+(title) 97.2 509 T
+4 F
+(:Love me tender}) 133.2 509 T
+({) 90 495 T
+5 F
+(subtitle) 97.2 495 T
+4 F
+(:Presley/Matson}) 154.8 495 T
+1 14 Q
+(4. Invoke) 72 465.67 T
+2 12 Q
+(CHORD) 128.38 465.67 T
+1 14 Q
+( with your \336le as an ar) 172.37 465.67 T
+(gument. This will produce the PostScript) 297.32 465.67 T
+(output. Y) 72 449.67 T
+(ou can save this in a \336le for future printing, or send the output directly to) 123.49 449.67 T
+(the printer) 72 433.67 T
+4 12 Q
+(% chord loveme >loveme.ps) 90 419 T
+1 14 Q
+(or) 72 403.67 T
+4 12 Q
+(% chord loveme | lp) 90 389 T
+FMENDPAGE
+%%EndPage: "4" 12
+%%Page: "3" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-3-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+0 5 5 605 787 600 782 45 -44 FMBEGINEPSF
+%%BeginDocument: /home/martin/wrk/chord-martin/ex1.eps
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: A song
+%%Creator: Martin Leclerc & Mario Dorion
+%%BoundingBox: 5 5 605 787
+%%EndComments
+/inch {72 mul } def
+
+/CHORD_FONT { /Helvetica-Oblique findfont 9 scalefont } def
+/TEXT_FONT { /Times-Roman findfont 12 scalefont } def
+/MONO_FONT { /Courier findfont 10 scalefont } def
+% routines for the drawing of the chords
+/grid { 
+	currentpoint currentpoint
+	6 { 0 cagesizeX rlineto incr cagesize neg incr add rmoveto } repeat
+	moveto
+	5 { cagesize 0 rlineto 0 cagesize sub incr rmoveto } repeat
+	1 setlinewidth stroke moveto
+	currentpoint
+	0 cagesizeX rmoveto cagesize 0 rlineto
+	cagesize 30 div setlinewidth stroke
+	moveto	
+} def
+
+/dot {
+	/fret exch def /str exch def
+	/x 5  fret abs sub incr mul half-incr sub def
+	/y 6 str sub incr mul def
+	currentpoint
+	y x rmoveto
+	0 setgray
+	fret -1 eq
+	  {
+	  0 incr rmoveto
+	  check neg  check neg rmoveto
+	  check check rlineto check check rlineto
+	  check neg check neg rmoveto check neg check rmoveto
+  	  check check neg rlineto check check neg rlineto
+	  cagesize 50 div setlinewidth stroke
+	  }
+	  {  fret 0 ne
+	    { currentpoint dot-size 0 360 arc fill}
+	    { currentpoint
+	      check 0 360 newpath arc
+	      cagesize 50 div setlinewidth
+	    }
+	    ifelse 
+	    stroke 
+	  }
+	  ifelse
+	moveto
+} def	
+
+/dots {
+	grid
+	/origin exch def
+	/fret-displ exch def
+	  1 1 6
+	  {
+	    /str exch def
+	    /fret exch def
+	    fret -2 ne {str fret dot} if
+	  } for
+
+	fret-displ 1 ne
+	{
+    	  currentpoint displ-font setfont
+    	  0 cagesize fret-displ 10 ge {1.75} {3} ifelse div sub
+	  cagesizeX incr sub rmoveto
+    	  /char 6 string def fret-displ char cvs show moveto 
+	} if
+
+	/chord-name exch def
+	currentpoint displ-font setfont
+	0 cagesizeX cagesizeX 15 div add dot-size 3 mul add rmoveto
+	chord-name stringwidth pop 2 div cagesize 2 div exch sub 0 rmoveto
+	chord-name show
+	0 cagesize 10 div rmoveto
+	origin 1 eq { (*) show} if
+	origin 2 eq { (**) show} if
+	chord-font setfont moveto
+} def
+
+/cagesize 30 def
+/incr cagesize 5 div def
+/cagesizeX incr 4 mul def
+/half-incr incr 2 div def
+/dot-size cagesize 15 div def
+/check cagesize 20 div def
+
+/chord-font /Times-Roman findfont cagesize 5 div scalefont def
+/displ-font /Times-Roman findfont cagesize 3 div scalefont def
+% end of the routines for the drawing of the chords
+
+%%EndProlog
+/TEXT_FONT { /Times-Roman findfont 17 scalefont } def
+/MONO_FONT { /Courier findfont 15 scalefont } def
+TEXT_FONT setfont
+(Love me tender) dup stringwidth pop 2 div
+612 2 div exch sub 756 moveto
+show
+/TEXT_FONT { /Times-Roman findfont 12 scalefont } def
+/MONO_FONT { /Courier findfont 10 scalefont } def
+TEXT_FONT setfont
+(Presley/Matson) dup stringwidth pop 2 div
+612 2 div exch sub 739 moveto
+show
+/minhpos 0 def
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+697 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Love me tender ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+697 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+(Love me tender love me sweet  ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+697 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(Love me tender love me sweet  Never let me ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+697 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 686 moveto
+(Love me tender love me sweet  Never let me go) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(You have made my ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+(You have made my life complete ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(You have made my life complete and I love you ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+676 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 665 moveto
+(You have made my life complete and I love you so) show
+/minhpos 0 def
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+635 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Love me ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (B7) stringwidth pop add def
+635 moveto
+CHORD_FONT setfont
+(B7) show
+TEXT_FONT setfont
+(Love me tender ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (Em) stringwidth pop add def
+635 moveto
+CHORD_FONT setfont
+(Em) show
+TEXT_FONT setfont
+(Love me tender love me ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G7) stringwidth pop add def
+635 moveto
+CHORD_FONT setfont
+(G7) show
+TEXT_FONT setfont
+72 624 moveto
+(Love me tender love me true ) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (C) stringwidth pop add def
+614 moveto
+CHORD_FONT setfont
+(C) show
+TEXT_FONT setfont
+(all my ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (Cm) stringwidth pop add def
+614 moveto
+CHORD_FONT setfont
+(Cm) show
+TEXT_FONT setfont
+(all my dreams ful) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+614 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 603 moveto
+(all my dreams fulfill) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+593 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(For ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (Dm) stringwidth pop add def
+593 moveto
+CHORD_FONT setfont
+(Dm) show
+TEXT_FONT setfont
+(For my ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E+) stringwidth pop add def
+593 moveto
+CHORD_FONT setfont
+(E+) show
+TEXT_FONT setfont
+(For my dar) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (E7) stringwidth pop add def
+593 moveto
+CHORD_FONT setfont
+(E7) show
+TEXT_FONT setfont
+(For my darling ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+593 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+72 582 moveto
+(For my darling I love you) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+572 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(and I always ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+572 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(and I always will ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (Am7) stringwidth pop add def
+572 moveto
+CHORD_FONT setfont
+(Am7) show
+TEXT_FONT setfont
+(and I always will  ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+572 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+72 561 moveto
+(and I always will  ) show
+1  setlinewidth
+newpath
+62 644 moveto
+0 -83 rlineto
+closepath
+stroke
+/minhpos 0 def
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+531 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Love me tender ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+531 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+(Love me tender love me long ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+531 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(Love me tender love me long Take me to your ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+531 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 520 moveto
+(Love me tender love me long Take me to your heart) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+510 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(For it's there that ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+510 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+(For it's there that I belong ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+510 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(For it's there that I belong and we'll never ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+510 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 499 moveto
+(For it's there that I belong and we'll never part) show
+/minhpos 0 def
+TEXT_FONT setfont
+.9  setgray
+12  setlinewidth
+newpath
+70 471 moveto
+(Chorus ) stringwidth rlineto
+stroke
+72 467 moveto
+0  setgray
+1 setlinewidth
+(Chorus) show
+/minhpos 0 def
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+437 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(Love me tender ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+437 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+(Love me tender Love me dear ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+437 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(Love me tender Love me dear Tell me you are ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+437 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 426 moveto
+(Love me tender Love me dear Tell me you are mine) show
+/minhpos 0 def
+TEXT_FONT setfont
+() stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+416 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+(I'll be yours through ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (A7) stringwidth pop add def
+416 moveto
+CHORD_FONT setfont
+(A7) show
+TEXT_FONT setfont
+(I'll be yours through all the years ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (D7) stringwidth pop add def
+416 moveto
+CHORD_FONT setfont
+(D7) show
+TEXT_FONT setfont
+(I'll be yours through all the years till the end of ) stringwidth  pop 72 add 
+dup minhpos lt
+     {pop minhpos} if
+dup /minhpos exch (G) stringwidth pop add def
+416 moveto
+CHORD_FONT setfont
+(G) show
+TEXT_FONT setfont
+72 405 moveto
+(I'll be yours through all the years till the end of time) show
+/minhpos 0 def
+TEXT_FONT setfont
+.9  setgray
+12  setlinewidth
+newpath
+70 377 moveto
+(Chorus ) stringwidth rlineto
+stroke
+72 373 moveto
+0  setgray
+1 setlinewidth
+(Chorus) show
+/minhpos 0 def
+480 363 moveto
+72 303 moveto
+(A7) -1 0 2 0 2 0 1 0 dots
+132 303 moveto
+(Am7) -1 0 2 2 1 3 1 0 dots
+192 303 moveto
+(B7) 0 2 1 2 0 2 1 0 dots
+252 303 moveto
+(C) -1 3 2 0 1 0 1 0 dots
+312 303 moveto
+(Cm) -1 1 3 3 2 1 3 0 dots
+372 303 moveto
+(D7) -1 -1 0 2 1 2 1 0 dots
+432 303 moveto
+(Dm) -1 -1 0 2 3 1 1 0 dots
+492 303 moveto
+(E+) -1 -1 2 1 1 0 1 0 dots
+72 243 moveto
+(E7) 0 2 2 1 3 0 1 0 dots
+132 243 moveto
+(Em) 0 2 2 0 0 0 1 0 dots
+192 243 moveto
+(G) 3 2 0 0 0 3 1 0 dots
+252 243 moveto
+(G7) 3 2 0 0 0 1 1 0 dots
+1  setlinewidth
+0  setgray
+newpath
+72 36 10 sub moveto
+468 0 rlineto
+stroke
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+FMENDPAGE
+%%EndPage: "3" 13
+%%Page: "2" 14
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-2-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 14 Q
+(An Example) 72 710.67 T
+1 F
+(This is an example of a \322source\323 \336le for) 72 689.67 T
+2 12 Q
+(CHORD) 299.44 689.67 T
+1 14 Q
+(, i.e. a \336le that is meant to be pro-) 343.44 689.67 T
+(cessed by) 72 673.67 T
+2 12 Q
+(CHORD) 129.54 673.67 T
+1 14 Q
+(.) 173.53 673.67 T
+4 12 Q
+({) 90 643 T
+5 F
+(title) 97.2 643 T
+4 F
+(:Love me tender}) 133.2 643 T
+({) 90 629 T
+5 F
+(subtitle) 97.2 629 T
+4 F
+(:Presley/Matson}) 154.8 629 T
+([G]Love me tender [A7]love me sweet [D7]Never let me [G]go) 90 601 T
+([G]You have made my [A7]life complete [D7]and I love you [G]so) 90 587 T
+({) 90 559 T
+5 F
+(start_of_chorus) 97.2 559 T
+4 F
+(}) 205.2 559 T
+([G]Love me [B7]tender [Em]love me [G7]true) 90 545 T
+([C]all my [Cm]dreams ful[G]f) 90 531 T
+(ill) 291.6 531 T
+([G]For [Dm6]my [E+]dar[E7]ling [A7]I love you) 90 517 T
+([D7]and I always [G]will [Am7] [D7]) 90 503 T
+({) 90 489 T
+5 F
+(end_of_chorus) 97.2 489 T
+4 F
+(}) 190.8 489 T
+-0.36 ([G]Love me tender [A7]love me long [D7]Take me to your [G]heart) 90 461 P
+-0.4 ([G]For it\325s there that [A7]I belong [D7]and we\325ll never [G]part) 90 447 P
+({) 90 419 T
+5 F
+(comment) 97.2 419 T
+4 F
+(:Chorus}) 147.6 419 T
+([G]Love me tender [A7]Love me dear [D7]Tell me you are [G]mine) 90 391 T
+-0.33 ([G]I\325ll be yours through [A7]all the years [D7]till the end of) 90 377 P
+([G]time) 90 363 T
+({) 90 335 T
+5 F
+(comment) 97.2 335 T
+4 F
+(:Chorus}) 147.6 335 T
+1 14 Q
+(Here are the important points about that \336le:) 72 303.67 T
+(It can be created using any text editor you like;) 108 287.67 T
+(All characters present in the ISO 8859-1 character set can be used.) 108 271.67 T
+(W) 72 239.67 T
+(e will explain the content of that \336le. But \336rst, let\325) 84.1 239.67 T
+(s look at the end result, on the) 364.1 239.67 T
+(next page.) 72 223.67 T
+FMENDPAGE
+%%EndPage: "2" 14
+%%Page: "1" 15
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-1-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+3 18 Q
+(W) 173.77 708 T
+(elcome to the) 190.78 708 T
+2 12 Q
+(CHORD) 296.24 708 T
+3 18 Q
+( User Guide!) 340.24 708 T
+2 12 Q
+-0.01 (CHORD) 72 658.67 P
+1 14 Q
+-0.01 ( is a share-ware utility that was \336rst created by lazy guitarists who got tired) 115.99 658.67 P
+(of turning pages in the middle of the songs they liked.) 72 642.67 T
+2 12 Q
+(CHORD) 72 610.67 T
+1 14 Q
+( takes a \336le containing the lyrics and chords of a song and produces a Post-) 115.99 610.67 T
+(Script version of that song. The song has now the following attributes:) 72 594.67 T
+(T) 144 578.67 T
+(itles and sub-titles have been centered;) 152.06 578.67 T
+(The lyrics appear in the font and size of your choice;) 144 562.67 T
+(All chords name appear right above the right lyrics;) 144 546.67 T
+(All chords used in your song appear as grids at the bottom of the page.) 144 530.67 T
+-0.42 (Optionally) 72 498.67 P
+-0.42 (, you can also generate an index of your songs, have the pages numbered,) 130.98 498.67 P
+-0.01 (have songs transposed up or down, print in 2-up or 4-up modes and insert tablature) 72 482.67 P
+(and comments) 72 466.67 T
+-0.52 (Y) 72 434.67 P
+-0.52 (ou have a great many options on the \336nal appearance of you songs. All of them are) 80.71 434.67 P
+(described in the section titled \322Options and Switches\323) 72 418.67 T
+(For now) 72 386.67 T
+(, please read on to better understand what) 118.14 386.67 T
+2 12 Q
+(CHORD) 354.14 386.67 T
+1 14 Q
+( can do for you.) 398.13 386.67 T
+FMENDPAGE
+%%EndPage: "1" 15
+%%Page: "0" 16
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Version 3.6) 72 748 T
+(-0-) 298.67 748 T
+(The Chord User Guide) 412.64 748 T
+72 63 540 63 2 L
+0.5 H
+2 Z
+N
+63 54 549 774 R
+7 X
+V
+0 5 5 605 787 600 782 6 5 FMBEGINEPSF
+%%BeginDocument: /home/martin/wrk/chord-martin/cover.eps
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: A song
+%%Creator: Martin Leclerc & Mario Dorion
+%%BoundingBox: 5 5 605 787
+%%EndComments
+/inch {72 mul } def
+
+/CHORD_FONT { /Helvetica-Oblique findfont 9 scalefont } def
+/TEXT_FONT { /Times-Roman findfont 12 scalefont } def
+/MONO_FONT { /Courier findfont 10 scalefont } def
+% routines for the drawing of the chords
+/grid { 
+	currentpoint currentpoint
+	6 { 0 cagesizeX rlineto incr cagesize neg incr add rmoveto } repeat
+	moveto
+	5 { cagesize 0 rlineto 0 cagesize sub incr rmoveto } repeat
+	1 setlinewidth stroke moveto
+	currentpoint
+	0 cagesizeX rmoveto cagesize 0 rlineto
+	cagesize 30 div setlinewidth stroke
+	moveto	
+} def
+
+/dot {
+	/fret exch def /str exch def
+	/x 5  fret abs sub incr mul half-incr sub def
+	/y 6 str sub incr mul def
+	currentpoint
+	y x rmoveto
+	fret -1 eq
+	  {
+	  0 incr rmoveto
+	  check neg  check neg rmoveto
+	  check check rlineto check check rlineto
+	  check neg check neg rmoveto check neg check rmoveto
+  	  check check neg rlineto check check neg rlineto
+	  cagesize 50 div setlinewidth stroke
+	  }
+	  {  fret 0 ne
+	    { currentpoint dot-size 0 360 arc fill}
+	    { currentpoint
+	      check 0 360 newpath arc
+	      cagesize 50 div setlinewidth
+	    }
+	    ifelse 
+	    stroke 
+	  }
+	  ifelse
+	moveto
+} def	
+
+/dots {
+	grid
+	/origin exch def
+	/fret-displ exch def
+	  1 1 6
+	  {
+	    /str exch def
+	    /fret exch def
+	    fret -2 ne {str fret dot} if
+	  } for
+
+	fret-displ 1 ne
+	{
+    	  currentpoint displ-font setfont
+    	  0 cagesize fret-displ 10 ge {1.75} {3} ifelse div sub
+	  cagesizeX incr sub rmoveto
+    	  /char 6 string def fret-displ char cvs show moveto 
+	} if
+
+	/chord-name exch def
+	currentpoint displ-font setfont
+	0 cagesizeX cagesizeX 15 div add dot-size 3 mul add rmoveto
+	chord-name stringwidth pop 2 div cagesize 2 div exch sub 0 rmoveto
+	chord-name show
+	0 cagesize 10 div rmoveto
+	origin 1 eq { (*) show} if
+	origin 2 eq { (**) show} if
+	chord-font setfont moveto
+} def
+
+/cagesize 30 def
+/incr cagesize 5 div def
+/cagesizeX incr 4 mul def
+/half-incr incr 2 div def
+/dot-size cagesize 15 div def
+/check cagesize 20 div def
+
+/chord-font /Times-Roman findfont cagesize 5 div scalefont def
+/displ-font /Times-Roman findfont cagesize 3 div scalefont def
+% end of the routines for the drawing of the chords
+
+%%EndProlog
+0.75 setgray
+72 696 moveto
+(BaddE/F#) 2 -1 4 4 0 0 1 0 dots
+132 696 moveto
+(Bdim) -1 -1 0 1 0 1 1 0 dots
+192 696 moveto
+(Bsus) -1 -1 3 3 4 1 2 0 dots
+252 696 moveto
+(Bsus4) -1 -1 3 3 4 1 2 0 dots
+312 696 moveto
+(Bm) -1 2 4 4 3 2 1 0 dots
+372 696 moveto
+(Bm\(maj7\)) -1 1 4 4 3 -1 1 0 dots
+432 696 moveto
+(Bm\(sus9\)) -1 -1 4 4 2 2 1 0 dots
+492 696 moveto
+(Bm6) -1 -1 4 4 3 4 1 0 dots
+72 636 moveto
+(Bm7) -1 1 3 1 2 1 2 0 dots
+132 636 moveto
+(Bm7b5) 1 2 4 2 3 1 1 0 dots
+192 636 moveto
+(Bmaj) -1 2 4 3 4 -1 1 0 dots
+252 636 moveto
+(Bmaj7) -1 2 4 3 4 -1 1 0 dots
+312 636 moveto
+(Bmin) -1 2 4 4 3 2 1 0 dots
+372 636 moveto
+(Bmsus9) -1 -1 4 4 2 2 1 0 dots
+432 636 moveto
+(Bmmaj7) -1 1 4 4 3 -1 1 0 dots
+492 636 moveto
+(C) -1 3 2 0 1 0 1 0 dots
+72 576 moveto
+(C\(add9\)) -1 3 2 0 3 0 1 0 dots
+132 576 moveto
+(C\(addD\)) -1 3 2 0 3 0 1 0 dots
+192 576 moveto
+(C+) -1 -1 2 1 1 0 1 0 dots
+252 576 moveto
+(C/B) -1 2 2 0 1 0 1 0 dots
+312 576 moveto
+(C11) -1 1 3 1 4 1 3 0 dots
+372 576 moveto
+(C4) -1 -1 3 0 1 3 1 0 dots
+432 576 moveto
+(C6) -1 0 2 2 1 3 1 0 dots
+492 576 moveto
+(C7) 0 3 2 3 1 0 1 0 dots
+72 516 moveto
+(C9) 1 3 1 2 1 3 8 0 dots
+132 516 moveto
+(C9\(11\)) -1 3 3 3 3 -1 1 0 dots
+192 516 moveto
+(Cadd2/B) -1 2 0 0 1 0 1 0 dots
+252 516 moveto
+(Cadd9) -1 3 2 0 3 0 1 0 dots
+312 516 moveto
+(CaddD) -1 3 2 0 3 0 1 0 dots
+372 516 moveto
+(Cdim) -1 -1 1 2 1 2 1 0 dots
+432 516 moveto
+(Csus) -1 -1 3 0 1 3 1 0 dots
+492 516 moveto
+(Csus2) -1 3 0 0 1 -1 1 0 dots
+72 456 moveto
+(Csus4) -1 -1 3 0 1 3 1 0 dots
+132 456 moveto
+(Csus9) -1 -1 4 1 2 4 7 0 dots
+192 456 moveto
+(Cm) -1 1 3 3 2 1 3 0 dots
+252 456 moveto
+(Cm11) -1 1 3 1 4 -1 3 0 dots
+312 456 moveto
+(Cm7) -1 1 3 1 2 1 3 0 dots
+372 456 moveto
+(Cmaj) 0 3 2 0 1 0 1 0 dots
+432 456 moveto
+(Cmaj7) -1 3 2 0 0 0 1 0 dots
+492 456 moveto
+(Cmin) -1 1 3 3 2 1 3 0 dots
+72 396 moveto
+(C#) -1 -1 3 1 2 1 1 0 dots
+132 396 moveto
+(C#\(add9\)) -1 1 3 3 1 1 4 0 dots
+192 396 moveto
+(C#+) -1 -1 3 2 2 1 1 0 dots
+252 396 moveto
+(C#4) -1 -1 3 3 4 1 4 0 dots
+312 396 moveto
+(C#7) -1 -1 3 4 2 4 1 0 dots
+372 396 moveto
+(C#7\(b5\)) -1 2 1 2 1 2 1 0 dots
+432 396 moveto
+(C#add9) -1 1 3 3 1 1 4 0 dots
+492 396 moveto
+(C#dim) -1 -1 2 3 2 3 1 0 dots
+72 336 moveto
+(C#sus) -1 -1 3 3 4 1 4 0 dots
+132 336 moveto
+(C#sus4) -1 -1 3 3 4 1 4 0 dots
+192 336 moveto
+(C#m) -1 -1 2 1 2 0 1 0 dots
+252 336 moveto
+(C#m7) -1 -1 2 4 2 4 1 0 dots
+312 336 moveto
+(C#maj) -1 4 3 1 1 1 1 0 dots
+372 336 moveto
+(C#maj7) -1 4 3 1 1 1 1 0 dots
+432 336 moveto
+(C#min) -1 -1 2 1 2 0 1 0 dots
+492 336 moveto
+(Db) -1 -1 3 1 2 1 1 0 dots
+72 276 moveto
+(Db+) -1 -1 3 2 2 1 1 0 dots
+132 276 moveto
+(Db7) -1 -1 3 4 2 4 1 0 dots
+192 276 moveto
+(Dbdim) -1 -1 2 3 2 3 1 0 dots
+252 276 moveto
+(Dbsus) -1 -1 3 3 4 1 4 0 dots
+312 276 moveto
+(Dbsus4) -1 -1 3 3 4 1 4 0 dots
+372 276 moveto
+(Dbm) -1 -1 2 1 2 0 1 0 dots
+432 276 moveto
+(Dbm7) -1 -1 2 4 2 4 1 0 dots
+492 276 moveto
+(Dbmaj) -1 -1 3 1 2 1 1 0 dots
+72 216 moveto
+(Dbmaj7) -1 4 3 1 1 1 1 0 dots
+132 216 moveto
+(Dbmin) -1 -1 2 1 2 0 1 0 dots
+192 216 moveto
+(D) -1 -1 0 2 3 2 1 0 dots
+252 216 moveto
+(D\(add9\)) 0 0 0 2 3 2 1 0 dots
+312 216 moveto
+(D+) -1 -1 0 3 3 2 1 0 dots
+372 216 moveto
+(D/A) -1 0 0 2 3 2 1 0 dots
+432 216 moveto
+(D/B) -1 2 0 2 3 2 1 0 dots
+492 216 moveto
+(D/C) -1 3 0 2 3 2 1 0 dots
+72 156 moveto
+(D/C#) -1 4 0 2 3 2 1 0 dots
+132 156 moveto
+(D/E) -1 1 1 1 1 -1 7 0 dots
+192 156 moveto
+(D/G) 3 -1 0 2 3 2 1 0 dots
+252 156 moveto
+(D11) 3 0 0 2 1 0 1 0 dots
+312 156 moveto
+(D4) -1 -1 0 2 3 3 1 0 dots
+372 156 moveto
+(D5/E) 0 1 1 1 -1 -1 7 0 dots
+432 156 moveto
+(D6) -1 0 0 2 0 2 1 0 dots
+492 156 moveto
+(D7) -1 -1 0 2 1 2 1 0 dots
+72 96 moveto
+(D7#9) -1 2 1 2 3 3 4 0 dots
+132 96 moveto
+(D7\(#9\)) -1 2 1 2 3 3 4 0 dots
+192 96 moveto
+(D7sus2) -1 0 0 2 1 0 1 0 dots
+252 96 moveto
+(D7sus4) -1 0 0 2 1 3 1 0 dots
+312 96 moveto
+(D9) 1 3 1 2 1 3 10 0 dots
+372 96 moveto
+(D9\(add6\)) 1 3 3 2 0 0 10 0 dots
+432 96 moveto
+(D9add6) 1 3 3 2 0 0 10 0 dots
+492 96 moveto
+(Dadd9) 0 0 0 2 3 2 1 0 dots
+72 36 moveto
+(Ddim) -1 -1 0 1 0 1 1 0 dots
+132 36 moveto
+(Dsus) -1 -1 0 2 3 3 1 0 dots
+192 36 moveto
+(Dsus2) 0 0 0 2 3 0 1 0 dots
+252 36 moveto
+(Dsus4) -1 -1 0 2 3 3 1 0 dots
+312 36 moveto
+(Dm) -1 -1 0 2 3 1 1 0 dots
+372 36 moveto
+(Dm\(#5\)) -1 -1 0 3 3 2 1 0 dots
+432 36 moveto
+(Dm\(#7\)) -1 -1 0 2 2 1 1 0 dots
+492 36 moveto
+(Dm/A) -1 0 0 2 3 1 1 0 dots
+1  setlinewidth
+% newpath
+% 72 36 10 sub moveto
+% 468 0 rlineto
+% stroke
+% (CHORD CHART) dup stringwidth pop 2 div
+% 612 2 div exch sub 36 3 div moveto
+% show
+showpage
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+171 387 423 621 R
+V
+6 36 Q
+0 X
+(The CHORD) 185.04 583 T
+(User Guide) 195.12 545 T
+7 18 Q
+(Martin Lecler) 233.76 503 T
+(c) 350.88 503 T
+(Mario Dorion) 239.04 483 T
+7 14 Q
+(V) 258.44 445.67 T
+(ersion 3.6) 267.24 445.67 T
+(Mar) 264.19 429.67 T
+(ch 95) 291.45 429.67 T
+FMENDPAGE
+%%EndPage: "0" 16
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Descend
+%%Pages: 16
+%%DocumentFonts: Helvetica-Bold
+%%+ Times-Roman
+%%+ Helvetica
+%%+ Times-Bold
+%%+ Courier
+%%+ Courier-Bold
+%%+ Bookman-Demi
+%%+ Bookman-Light
+%%EOF
+
