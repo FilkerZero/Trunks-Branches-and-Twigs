@@ -47,3 +47,7 @@ SOURCE TREE:
 
 AUTOMATED TESTS STATE:
  * Continuous Integration hosted at travis-ci.org: [![Build Status](https://travis-ci.org/kelvinlawson/atomthreads.svg?branch=master)](https://travis-ci.org/kelvinlawson/atomthreads)
+
+---------------------------------------------------------------------------
+
+This is a fork of AtomThreads release 1.3
